@@ -1,0 +1,23 @@
+.query-details {
+  &__text {
+    height: 250px !important;
+  }
+
+  &__action-buttons {
+    button {
+      font-size: 1.2rem;
+
+      .svg-inline--fa {
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+}
+
+.custom-ui {
+  button {
+    width: 45%;
+    // font-weight: bold;
+  }
+}

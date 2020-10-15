@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "textify",
   "private": true,
   "description": "A simplified bare-bones starter for Gatsby",
   "version": "0.1.0",
@@ -14,9 +14,31 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-regular-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "bootstrap": "^4.5.2",
     "gatsby": "^2.24.67",
+    "gatsby-plugin-create-client-paths": "^2.3.13",
+    "gatsby-plugin-manifest": "^2.4.34",
+    "gatsby-plugin-offline": "^3.2.32",
+    "gatsby-plugin-react-helmet": "^3.3.14",
+    "gatsby-plugin-sass": "^2.3.16",
+    "gatsby-plugin-typography": "^2.5.13",
+    "localforage": "^1.9.0",
+    "node-sass": "^4.14.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-confirm-alert": "^2.6.2",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
+    "react-select": "^3.1.0",
+    "react-time-ago": "^6.1.1",
+    "react-typography": "^0.16.19",
+    "tesseract.js": "^2.1.3",
+    "typography": "^0.16.19",
+    "typography-theme-github": "^0.16.19",
+    "uuid": "^8.3.1"
   },
   "devDependencies": {
     "prettier": "2.1.2"

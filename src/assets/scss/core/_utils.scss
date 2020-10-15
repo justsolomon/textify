@@ -1,0 +1,11 @@
+.h-45 {
+  height: 45px;
+
+  //for react select component height
+  &__control {
+    height: 45px;
+  }
+  &__menu {
+    width: inherit;
+  }
+}

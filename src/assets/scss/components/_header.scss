@@ -1,0 +1,11 @@
+.app-name {
+  &__logo {
+    width: 35px;
+    height: 35px;
+  }
+  span {
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+}

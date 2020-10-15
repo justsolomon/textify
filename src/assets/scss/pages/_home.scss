@@ -1,0 +1,81 @@
+.home {
+  .image-form {
+    input[type='file'] {
+      height: 200px;
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    &__file-upload {
+      display: block;
+      height: 200px;
+      border: 1px solid #ccc;
+      background-color: rgba(140, 140, 140, 0.2);
+
+      &--incomplete {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 200px;
+        cursor: pointer;
+      }
+
+      .fa-file-image {
+        height: 32px;
+        width: 32px;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+
+      img {
+        height: 80px;
+        width: 100px;
+      }
+    }
+  }
+
+  .convert-image {
+    &__button {
+      font-size: 1.15rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .home {
+    .image-form {
+      input[type='file'] {
+        height: 300px;
+      }
+
+      &__file-upload {
+        height: 300px;
+
+        &--incomplete {
+          height: 300px;
+        }
+      }
+
+      &--incomplete {
+        height: 350px;
+      }
+    }
+  }
+
+  .language-select {
+    width: 62%;
+  }
+
+  .convert-image {
+    width: 35%;
+  }
+}
