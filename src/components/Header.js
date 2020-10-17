@@ -10,7 +10,11 @@ function Header() {
           to='/'
           className='navbar-brand app-name d-flex align-items-center'
         >
-          <img className='app-name__logo my-0 mr-1' src={AppLogo} />
+          <img
+            className='app-name__logo my-0 mr-1'
+            src={AppLogo}
+            alt='App logo'
+          />
           <span>Textify</span>
         </Link>
         <Link to='/all-queries' className='nav-link'>
