@@ -5,7 +5,7 @@ import ImageForm from '../components/ImageForm';
 import ConvertProgress from '../components/ConvertProgress';
 import useStorage from '../hooks/useStorage';
 import { v4 as uuidv4 } from 'uuid';
-import MetaData from '../components/MetaData';
+import SEO from '../components/SEO';
 
 function Home() {
   const [imageFile, setImageFile] = useState({});
@@ -49,7 +49,8 @@ function Home() {
 
   return (
     <Layout>
-      <MetaData title='Textify' />
+      <SEO title='Home' />
+      {/* <MetaData title='Textify' /> */}
       <div className='home'>
         <ImageForm
           convertImg={convertImg}
