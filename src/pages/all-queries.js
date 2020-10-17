@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import QueryCardList from '../components/QueryCardList';
 import localForage from 'localforage';
 import useStorage from '../hooks/useStorage';
-import MetaData from '../components/MetaData';
+import SEO from '../components/SEO';
 
 function AllQueries() {
   const [allQueries, setAllQueries] = useState([]);
@@ -16,7 +16,8 @@ function AllQueries() {
 
   return (
     <Layout>
-      <MetaData title='All Queries | Textify' />
+      <SEO title='All Queries' />
+      {/* <MetaData title='All Queries | Textify' /> */}
       {allQueries !== null && <QueryCardList allQueries={allQueries} />}
     </Layout>
   );

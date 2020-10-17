@@ -41,7 +41,7 @@ function ImageForm({
             {!imageURL ? (
               <FontAwesomeIcon icon={faFileImage} />
             ) : (
-              <img src={imageURL} />
+              <img src={imageURL} alt='Uploaded file illustration' />
             )}
             <p>{fileName}</p>
           </div>
