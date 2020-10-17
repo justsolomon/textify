@@ -10,13 +10,14 @@ module.exports = {
     titleTemplate: '%s | Textify',
     description:
       'Free online OCR service for converting images, photos and screenshots to text',
-    url: 'https://textify-image.netlify.app',
+    siteUrl: 'https://textify-image.netlify.app',
     image: '/images/og_image.jpeg',
     twitterUsername: '@gbsolomon1',
   },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
