@@ -1,7 +1,7 @@
 //to disable netlify deploy previews from being crawled
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = 'https://www.example.com',
+  URL: NETLIFY_SITE_URL = 'https://textify-image.netlify.app/',
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
 } = process.env;
@@ -14,7 +14,7 @@ module.exports = {
     titleTemplate: '%s | Textify',
     description:
       'Free online OCR service for converting images, photos and screenshots to text',
-    siteUrl: 'https://textify-image.netlify.app',
+    siteUrl,
     image: '/images/og_image.jpeg',
     twitterUsername: '@gbsolomon1',
   },
