@@ -50,6 +50,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true,
+        develop: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Textify`,
