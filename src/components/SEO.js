@@ -19,6 +19,7 @@ const SEO = ({ title }) => {
 
   const seo = {
     title: title || defaultTitle,
+    metaTitle: `${title} | Textify`,
     description,
     image,
     url: `${siteUrl}${pathname}`,
@@ -31,7 +32,7 @@ const SEO = ({ title }) => {
 
       {seo.url && <meta property='og:url' content={seo.url} />}
 
-      {seo.title && <meta property='og:title' content={seo.title} />}
+      {seo.metaTitle && <meta property='og:title' content={seo.metaTitle} />}
 
       {seo.description && (
         <meta property='og:description' content={seo.description} />
@@ -45,7 +46,7 @@ const SEO = ({ title }) => {
         <meta name='twitter:creator' content={twitterUsername} />
       )}
 
-      {seo.title && <meta name='twitter:title' content={seo.title} />}
+      {seo.metaTitle && <meta name='twitter:title' content={seo.metaTitle} />}
 
       {seo.description && (
         <meta name='twitter:description' content={seo.description} />
