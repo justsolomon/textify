@@ -54,6 +54,7 @@ module.exports = {
       options: {
         printRejected: true,
         develop: true,
+        whitelist: ['fa-file-image'],
       },
     },
     {
