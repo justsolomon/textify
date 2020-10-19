@@ -15,7 +15,7 @@ module.exports = {
     description:
       'Free online OCR service for converting images, photos and screenshots to text',
     siteUrl,
-    image: '/images/og_image.jpeg',
+    image: '/images/og_image.jpg',
     twitterUsername: '@gbsolomon1',
   },
   plugins: [
@@ -47,6 +47,14 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true,
+        develop: true,
+        whitelist: ['fa-file-image'],
       },
     },
     {
