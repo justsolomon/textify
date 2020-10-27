@@ -8,7 +8,6 @@ function Edit() {
   return (
     <Layout>
       <SEO title='Edit Query' />
-      {/* <MetaData title='Edit Query | Textify' /> */}
       <Router basepath='/edit'>
         <QueryDetails path='/:id' />
       </Router>

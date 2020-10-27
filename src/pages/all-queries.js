@@ -17,7 +17,6 @@ function AllQueries() {
   return (
     <Layout>
       <SEO title='All Queries' />
-      {/* <MetaData title='All Queries | Textify' /> */}
       {allQueries !== null && allQueries.length !== 0 ? (
         <QueryCardList allQueries={allQueries} />
       ) : (
