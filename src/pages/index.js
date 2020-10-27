@@ -50,7 +50,6 @@ function Home() {
   return (
     <Layout>
       <SEO title='Home' />
-      {/* <MetaData title='Textify' /> */}
       <div className='home'>
         <ImageForm
           convertImg={convertImg}
