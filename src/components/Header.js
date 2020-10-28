@@ -17,9 +17,7 @@ function Header() {
           />
           <span>Textify</span>
         </Link>
-        <Link to='/all-queries' className='nav-link'>
-          All Queries
-        </Link>
+        <Link to='/all-queries'>All Queries</Link>
       </nav>
     </header>
   );
